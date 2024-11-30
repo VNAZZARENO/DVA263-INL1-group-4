@@ -69,21 +69,21 @@ The dataset comprises over 17,000 players, each with more than 70 attributes, in
 ### Results
 
 - **RandomForestRegressor:**
-  - **MSE:** 34.25
-  - **R²:** 0.78
+  - **MSE:** TO BE DETERMINED
+  - **R²:** TO BE DETERMINED
 - **LinearRegression:**
-  - **MSE:** 56.12
-  - **R²:** 0.65
-- **SVR:**
-  - **MSE:** 48.50
-  - **R²:** 0.69
+  - **MSE:** TO BE DETERMINED
+  - **R²:** TO BE DETERMINED
+- **SVR:** 
+  - **MSE:** TO BE DETERMINED
+  - **R²:** TO BE DETERMINED
 - **LGBMRegressor:**
-  - **MSE:** 35.10
-  - **R²:** 0.77
+  - **MSE:** TO BE DETERMINED
+  - **R²:** TO BE DETERMINED
 
 ### Conclusion
 
-RandomForestRegressor and LGBMRegressor performed the best, with RandomForestRegressor achieving the highest R² score. These models effectively capture the underlying patterns in player attributes to predict the overall rating.
+TO BE DETERMINED 
 
 ## Future Work
 
