@@ -6,7 +6,7 @@ This project aims to predict the overall rating of players in the FIFA 18 datase
 
 ## Dataset
 
-The dataset comprises over 17,000 players, each with more than 70 attributes, including player statistics, personal data, and categorical information.
+The dataset comprises over 17981 players, each with more than 74 attributes, including player statistics, personal data, and categorical information.
 
 ## Methodology
 
@@ -92,9 +92,19 @@ The dataset comprises over 17,000 players, each with more than 70 attributes, in
     - `model__learning_rate`: 0.1
     - `model__n_estimators`: 200
 
-### Conclusion
+## Results
 
-TO BE DETERMINED 
+The performance of various regression models was evaluated using cross-validation (CV) and tested on a hold-out test set. Below is a summary of the results:
+
+- **Random Forest Regressor**: This model achieved the best performance with a cross-validation score (Negative MSE) of **0.1231**, a Mean Squared Error (MSE) of **0.0882**, and an R² score of **0.9982** on the test set. The optimal parameters included `max_depth=None` and `n_estimators=200`.
+
+- **Linear Regression**: While computationally simple, this model had a higher test MSE of **3.6114** and an R² score of **0.9244**. The model performed best with `fit_intercept=True`.
+
+- **Support Vector Regressor (SVR)**: The SVR model demonstrated strong performance with a test MSE of **0.8120** and an R² score of **0.9830**, using a Radial Basis Function (RBF) kernel and `C=1.0`.
+
+- **LightGBM Regressor**: This gradient boosting model also performed well, achieving a test MSE of **0.1181** and an R² score of **0.9975**, with optimal parameters including `learning_rate=0.1` and `n_estimators=200`.
+
+Overall, the **Random Forest Regressor** provided the best balance of accuracy and predictive power, closely followed by the **LightGBM Regressor**, while the **SVR** offered competitive performance in a simpler model.
 
 ## Future Work
 
