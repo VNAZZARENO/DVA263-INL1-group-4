@@ -71,19 +71,26 @@ The dataset comprises over 17,000 players, each with more than 70 attributes, in
 - **RandomForestRegressor:**
   - **MSE:** 0.123064
   - **R²:** 0.998152
-  - **Best Parameters** model__max_depth: None, model__n_estimators: 200
+  - **Best Parameters**
+    - `model__max_depth`: None
+    - `model__n_estimators`: 200
 - **LinearRegression:**
   - **MSE:** 3.522638	
   - **R²:** 0.924367
-  - **Best Parameters** model__fit_intercept: True
+  - **Best Parameters**
+    - `model__fit_intercept`: True
 - **SVR:** 
   - **MSE:** 1.033004	
   - **R²:** 0.982995
-  - **Best Parameters** model__C: 1.0, model__kernel: 'rbf
+  - **Best Parameters**
+    - `model__C`: 1.0
+    - `model__kernel`: rbf
 - **LGBMRegressor:**
   - **MSE:** 0.149932	
   - **R²:** 0.997527
-  - **Best Parameters** model__learning_rate: 0.1, model__n_estimators: 200
+  - **Best Parameters**
+    - `model__learning_rate`: 0.1
+    - `model__n_estimators`: 200
 
 ### Conclusion
 
