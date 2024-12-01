@@ -116,3 +116,50 @@ Overall, the **Random Forest Regressor** provided the best balance of accuracy a
 
 - Scikit-learn documentation for model selection and evaluation.
 - SMOTE for imbalanced data handling.
+
+Great! If you're looking to add reproducibility instructions to your GitHub repository, here's a customized markdown section for your repository:
+
+## Setup
+
+To reproduce the results and run the code in this repository, follow these steps:
+
+### 1. Clone the Repository
+First, clone this repository to your local machine:
+```bash
+git clone https://github.com/VNAZZARENO/applied-machine-learning.git
+cd applied-machine-learning
+```
+
+### 2. Create a Virtual Environment (Optional but Recommended)
+Create a virtual environment to manage dependencies:
+```bash
+python -m venv env
+source env/bin/activate  # On Windows: env\Scripts\activate
+```
+
+### 3. Install Dependencies
+Install the required Python packages using `pip`:
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn lightgbm imbalanced-learn joblib tqdm
+```
+
+### 4. Run the Code
+Open the `assignement_1_no_gpu.ipynb` to reproduce the results:
+
+### 5. Deactivate the Virtual Environment (Optional)
+Once you're done, you can deactivate the virtual environment:
+```bash
+deactivate
+```
+
+### Requirements
+The project requires the following Python packages:
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+- `lightgbm`
+- `imbalanced-learn`
+- `joblib`
+- `tqdm`
