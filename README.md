@@ -105,5 +105,4 @@ TO BE DETERMINED
 ## References
 
 - Scikit-learn documentation for model selection and evaluation.
-- FIFA 18 dataset source: [Kaggle](https://www.kaggle.com/datasets/karankun/FIFA18)
 - SMOTE for imbalanced data handling.
