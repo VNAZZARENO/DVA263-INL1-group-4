@@ -1,4 +1,4 @@
-# DVA263_INL1_Group_Id: FIFA 18 Player Overall Rating Prediction
+# DVA263_INL1_4: FIFA 18 Player Overall Rating Prediction
 
 ## Introduction
 
@@ -69,17 +69,21 @@ The dataset comprises over 17,000 players, each with more than 70 attributes, in
 ### Results
 
 - **RandomForestRegressor:**
-  - **MSE:** TO BE DETERMINED
-  - **R²:** TO BE DETERMINED
+  - **MSE:** 0.123064
+  - **R²:** 0.998152
+  - **Best Parameters** model__max_depth: None, model__n_estimators: 200
 - **LinearRegression:**
-  - **MSE:** TO BE DETERMINED
-  - **R²:** TO BE DETERMINED
+  - **MSE:** 3.522638	
+  - **R²:** 0.924367
+  - **Best Parameters** model__fit_intercept: True
 - **SVR:** 
-  - **MSE:** TO BE DETERMINED
-  - **R²:** TO BE DETERMINED
+  - **MSE:** 1.033004	
+  - **R²:** 0.982995
+  - **Best Parameters** model__C: 1.0, model__kernel: 'rbf
 - **LGBMRegressor:**
-  - **MSE:** TO BE DETERMINED
-  - **R²:** TO BE DETERMINED
+  - **MSE:** 0.149932	
+  - **R²:** 0.997527
+  - **Best Parameters** model__learning_rate: 0.1, model__n_estimators: 200
 
 ### Conclusion
 
