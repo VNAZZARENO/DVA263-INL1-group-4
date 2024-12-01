@@ -126,8 +126,8 @@ To reproduce the results and run the code in this repository, follow these steps
 ### 1. Clone the Repository
 First, clone this repository to your local machine:
 ```bash
-git clone https://github.com/VNAZZARENO/applied-machine-learning.git
-cd applied-machine-learning
+git clone https://github.com/VNAZZARENO/DVA263-INL1-group-4.git
+cd DVA263-INL1-group-4
 ```
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
