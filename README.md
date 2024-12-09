@@ -1,4 +1,6 @@
-# DVA263_INL1_4: FIFA 18 Player Overall Rating Prediction
+# FIRST ASSIGNEMENT : INL1 SUPERVISED LEARNING
+
+## DVA263_INL1_Group_4: FIFA 18 Player Overall Rating Prediction
 
 ## Introduction
 
@@ -104,7 +106,7 @@ The performance of various regression models was evaluated using cross-validatio
 
 - **LightGBM Regressor**: This gradient boosting model also performed well, achieving a test MSE of **0.1181** and an R² score of **0.9975**, with optimal parameters including `learning_rate=0.1` and `n_estimators=200`.
 
-Overall, the **Random Forest Regressor** provided the best balance of accuracy and predictive power, closely followed by the **LightGBM Regressor**, while the **SVR** offered competitive performance in a simpler model.
+Overall, the **Random Forest Regressor** provided the best balance of accuracy and predictive power, closely followed by the **LightGBM Regressor**, while the **SVR** offered similar performance in a simpler model.
 
 ## Future Work
 
@@ -117,17 +119,23 @@ Overall, the **Random Forest Regressor** provided the best balance of accuracy a
 - Scikit-learn documentation for model selection and evaluation.
 - SMOTE for imbalanced data handling.
 
-Great! If you're looking to add reproducibility instructions to your GitHub repository, here's a customized markdown section for your repository:
 
-## Setup
+
+# SECOND ASSIGNEMENT : INL2 UNSUPERVISED LEARNING
+
+## DVA263_INL2_Group_4: Market Segmentation Data
+
+
+
+# Setup
 
 To reproduce the results and run the code in this repository, follow these steps:
 
 ### 1. Clone the Repository
 First, clone this repository to your local machine:
 ```bash
-git clone https://github.com/VNAZZARENO/DVA263-INL1-group-4.git
-cd DVA263-INL1-group-4
+git clone https://github.com/VNAZZARENO/DVA263-group-4-2024.git
+cd DVA263-group-4-2024
 ```
 
 ### 2. Create a Virtual Environment (Optional but Recommended)
