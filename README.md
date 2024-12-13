@@ -125,7 +125,64 @@ Overall, the **Random Forest Regressor** provided the best balance of accuracy a
 
 ## DVA263_INL2_Group_4: Market Segmentation Data
 
+## Introduction
 
+This project focuses on **unsupervised learning techniques** to analyze customer behaviors from the Market Segmentation dataset. Using clustering algorithms, we segmented customers into meaningful groups to derive actionable insights for targeted marketing strategies.
+
+## Dataset
+
+The **Market Segmentation dataset** contains behavioral statistics for 8,950 unique customers across 17 original features (excluding an ID column). To enhance the analysis, we engineered 8 new dependent features.
+
+### Key Data Characteristics:
+- Missing values imputed using clustering-based methods (K-Means).
+- Features include statistics like `BALANCE`, `PURCHASES`, `CREDIT_LIMIT`, and others.
+
+## Objectives
+
+1. Segment customers into distinct behavioral groups.
+2. Provide actionable marketing recommendations for each group.
+3. Visualize and analyze feature importance for segmentation.
+
+## Methodology
+
+### Data Cleaning and Preprocessing
+
+1. **Missing Value Imputation**: Used a clustering-based imputation strategy for `CREDIT_LIMIT` and `MINIMUM_PAYMENTS`.
+2. **Scaling**: Z-score normalization was applied for consistent clustering results.
+3. **Correlation Analysis**: Hierarchical clustering of feature correlations was performed to understand relationships among features.
+
+### Clustering
+
+1. **K-Means**:
+   - Optimal clusters determined using silhouette analysis.
+   - Chose **4 clusters** based on silhouette scores and interpretability.
+2. **Dimensionality Reduction**:
+   - PCA for visualization of clusters.
+   - t-SNE for a more detailed 2D embedding of clusters.
+
+### Visualization
+
+- **PCA Biplot** and **Cluster Overlay**: Demonstrated cluster separability.
+- **t-SNE Plot**: Showed inter-cluster relationships.
+- **Cluster-Wise Heatmap**: Highlighted normalized feature importance.
+- **Radar Chart**: Provided an intuitive view of feature significance for each cluster.
+
+## Results
+
+### Customer Segments and Recommendations
+
+| Cluster | Consumer Type           | Key Characteristics                                                                 | Marketing Recommendations                                                                 |
+|---------|--------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| 0       | Balanced Consumers      | Average `BALANCE` and `CREDIT_LIMIT`.                                              | Promote basic financial products and incentives for improved engagement.                 |
+| 1       | Highly Engaged Consumers| High `PURCHASES`, `ENGAGEMENT_INDEX`, `PURCHASE_TO_LIMIT`.                         | Offer cashback rewards and installment plans, monitor repayment behavior.               |
+| 2       | Outstanding Consumers   | High `PAYMENTS`, low `CREDIT_UTILIZATION`.                                         | Cross-sell premium financial products and savings plans.                                 |
+| 3       | Risky Consumers         | High `CREDIT_UTILIZATION`, `DEBT_TO_PAYMENT_RATIO`, `CASH_ADVANCE_TO_PURCHASES`.   | Provide credit counseling, debt consolidation plans, and support to manage finances.     |
+
+## Ethics of Clustering in Marketing
+
+- Customers should be informed about the use of their data.
+- Data privacy must comply with regulations like GDPR.
+- Bias in data and recommendations should be avoided to ensure fairness.
 
 # Setup
 
@@ -152,7 +209,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn lightgbm imbalanced-lea
 ```
 
 ### 4. Run the Code
-Open the `assignement_1_no_gpu.ipynb` to reproduce the results:
+Open `DVA263_INL1_Group_4.ipynb` or `DVA263_INL2_Group_4.ipynb` to reproduce the results:
 
 ### 5. Deactivate the Virtual Environment (Optional)
 Once you're done, you can deactivate the virtual environment:
